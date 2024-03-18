@@ -4,6 +4,10 @@ public class Answer {
     static void CompareNumbers(int firstNumber, int secondNumber)
     {
         // Введите свое решение ниже
+        // Внутри класса Answer напишите метод CompareNumbers, 
+        // который на вход принимает два числа и выводит, 
+        // какое число большее, а какое меньшее.
+
         if(firstNumber < secondNumber)
         {
             Console.WriteLine("второе число больше");

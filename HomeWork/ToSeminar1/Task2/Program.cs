@@ -5,6 +5,10 @@ public class Answer {
   static int FindMax(int a, int b, int c)
     {
       // Введите свое решение ниже
+      // Внутри класса Answer напишите метод FindMax, 
+      // который принимает на вход три числа и выдаёт максимальное из этих чисел.
+      
+
     int max = a;
     if(max < b)
     {
