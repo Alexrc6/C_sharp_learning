@@ -12,3 +12,6 @@ int num2 = b*10 + a;
 
 Console.WriteLine("Первое число равно {0}, второе - {1}, новое число равно {2}", a, b, num2);
 //Console.WriteLine(num2);
+
+string num_str = Convert.ToString(num);
+Console.WriteLine(Convert.ToString(num_str[0] + Convert.ToString(num_str[3])));
