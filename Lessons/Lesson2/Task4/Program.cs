@@ -1,10 +1,18 @@
-﻿
-        // Объявляем и инициализируем массив целых чисел
-        int[] numbers = { 1, 2, 3, 4, 5 };
+﻿// Дано N гирь с разным весом в случайном
+// порядке. Определить вес самой тяжелой
+// гири.
 
-        // Получаем длину массива с помощью свойства Length
-        int length = numbers.Length;
+//int n = 5;
+int[] array = new int[5]{5, 6, 9, 8, 11};
+int i = 0;
+int max = array[0];
 
-        // Выводим длину массива на экран
-        Console.WriteLine("Длина массива numbers: " + length);
-    
+while(i < array.Length)
+{
+        if (array[i] > max)
+        {
+                max = array[i];
+        }
+        i = i + 1;
+}
+Console.WriteLine($"{max} ");
