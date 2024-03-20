@@ -18,22 +18,4 @@ while(i < array.Length)
 Console.WriteLine($"{max} ");
 
 max = array[0];
-for(int j = 0; j < array.Length; j++)
-{
-          if (array[j] > max)
-        {
-                max = array[j];
-        }
-}
-Console.WriteLine($"{max} ");
-
-max = array[0];
-foreach(int e in array)
-{
-        if (e > max)
-        {
-                max = e;
-        } 
-}
-Console.WriteLine($"{max} ");
-
+for(int j = 0; j < nameof; j++)
