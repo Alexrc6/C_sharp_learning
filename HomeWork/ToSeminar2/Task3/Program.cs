@@ -2,23 +2,33 @@
 // на вход целое число из отрезка [10, 99] 
 // и показывает наибольшую цифру числа.
 
-string num = Convert.ToString(new Random().Next(10, 100));
-double number = 0;
+using System;
 
-for (int i = 0; i < num.Length; i++)
+class Program
 {
-    number = number + (num[i] - 48) * Math.Pow(10, (num.Length - 1 - i));
-}
-
-int maxDigit = num[0];
-
-foreach (int e in num)
-{
-    if (e > maxDigit)
+    static void Main()
     {
-        maxDigit = e;
-        //Console.Write($" {e} ");
+
+        string num = Convert.ToString(new Random().Next(10, 100));
+        double number = 0;
+
+        for (int i = 0; i < num.Length; i++)
+        {
+            number = number + (num[i] - 48) * Math.Pow(10, (num.Length - 1 - i));
+        }
+
+        int maxDigit = num[0];
+
+        foreach (int e in num)
+        {
+            if (e > maxDigit)
+            {
+                maxDigit = e;
+                //Console.Write($" {e} ");
+            }
+        }
+
+        Console.WriteLine($"Максимальная цифра числа {number} равна - {maxDigit - 48}");
+
     }
 }
-
-Console.WriteLine($"Максимальная цифра числа {number} равна - {maxDigit - 48}");

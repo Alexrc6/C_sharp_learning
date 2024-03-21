@@ -2,50 +2,58 @@
 // принимает натуральное число N, а на выходе 
 // показывает его цифры через запятую.
 
-Console.WriteLine("Введите любое натуральное число");
-int nInt = Convert.ToInt32(Console.ReadLine());
-int countN = 0;
-int tempNInt = nInt;
+using System;
 
-//Определения количества цифр в числе (потребуется для задания массива определенной длины)
-while (tempNInt > 0)
+class Program
 {
-    countN++;
-    tempNInt = tempNInt / 10;
+    static void Main()
+    {
+
+        Console.WriteLine("Введите любое натуральное число");
+        int nInt = Convert.ToInt32(Console.ReadLine());
+        int countN = 0;
+        int tempNInt = nInt;
+
+        //Определения количества цифр в числе (потребуется для задания массива определенной длины)
+        while (tempNInt > 0)
+        {
+            countN++;
+            tempNInt = tempNInt / 10;
+        }
+        //Console.WriteLine($"Число {nInt} - {countN} значное");
+
+        //Запись числа в массив
+        tempNInt = nInt;
+        int[] stringN = new int[countN];
+
+        for (int i = (countN - 1); i >= 0; i--)
+        {
+            stringN[i] = tempNInt % 10;
+            tempNInt = tempNInt / 10;
+            //Console.Write("Записано {0}", tempNInt);    
+        }
+        Console.Write("Исходное число: {0}", nInt);
+
+        //Вывод минизаголовка
+        if (stringN.Length < 2)
+        {
+            Console.Write(". Оно содержит цифру: ");
+        }
+        else
+        {
+            Console.Write(". Оно содержит цифры: ");
+        }
+
+        //Вывод всех цифр кроме последней + запятая и пробел в конце
+        for (int i = 0; i < stringN.Length - 1; i++)
+        {
+            Console.Write($"{stringN[i]}, ");
+        }
+        //Вывод последней цифры (без запятой в конце)
+        Console.Write($"{stringN[stringN.Length - 1]}");
+
+    }
 }
-//Console.WriteLine($"Число {nInt} - {countN} значное");
-
-//Запись числа в массив
-tempNInt = nInt;
-int[] stringN = new int[countN];
-
-for (int i = (countN - 1); i >= 0; i--)
-{
-    stringN[i] = tempNInt % 10;
-    tempNInt = tempNInt / 10;
-    //Console.Write("Записано {0}", tempNInt);    
-}
-Console.Write("Исходное число: {0}", nInt);
-
-//Вывод минизаголовка
-if (stringN.Length < 2)
-{
-    Console.Write(". Оно содержит цифру: ");
-}
-else
-{
-    Console.Write(". Оно содержит цифры: ");
-}
-
-//Вывод всех цифр кроме последней + запятая и пробел в конце
-for (int i = 0; i < stringN.Length - 1; i++)
-{
-    Console.Write($"{stringN[i]}, ");
-}
-//Вывод последней цифры (без запятой в конце)
-Console.Write($"{stringN[stringN.Length - 1]}");
-
-
 
 
 // Вариант 2
