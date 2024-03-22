@@ -29,7 +29,7 @@ for (int i = 0; i < n; i++)
 
 
 
-PrintMas(mas);
+// PrintMas(mas);
 
 
 
@@ -47,7 +47,8 @@ PrintMas(mas);
 //     char n = num[i];
 //     list[i] = Convert.ToInt16(Convert.ToString(n));
 //     listReverse[i] = Convert.ToInt16(Convert.ToString(num[num.Length - i - 1]));
-//     Console.WriteLine(n);
+//     //Console.WriteLine(n);
+//     Console.WriteLine(listReverse[i]);
 // }
 
 // Console.WriteLine();
@@ -55,8 +56,6 @@ PrintMas(mas);
 
 
 // Марина
-// / int[] arr = { }
-// // int n = Convert.ToInt32(Console.ReadLine());
 
 // string n = Console.ReadLine();
 // int len = n.Length;
@@ -64,7 +63,8 @@ PrintMas(mas);
 // int[] arr = new int[len];
 //  for ( int i = 0; i < len; i++)
 //  {
-//     arr[i] = Convert.ToInt32(Convert.ToString(n[i])); 
+//     //arr[i] = Convert.ToInt32(Convert.ToString(n[i])); 
+//     arr[i] = Convert.ToInt32(n[i]);
 //  }
 
 // void PrintMas(int[] col)
