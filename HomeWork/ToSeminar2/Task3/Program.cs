@@ -32,3 +32,27 @@ class Program
 
     }
 }
+
+
+
+//Второй вариант
+
+// using System;
+
+// class Program
+// {
+//     static void Main()
+//     {
+
+//         Console.Write("Введите число из отрезка [10, 99]");
+//         int num = Convert.ToInt32(Console.ReadLine());
+
+//         int firstDigit = num % 10;
+//         int secondDigit = num / 10;
+
+//         int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
+
+//         Console.WriteLine($"Максимальная цифра числа {num} равна - {maxDigit}");
+
+//     }
+// }

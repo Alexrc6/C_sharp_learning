@@ -22,7 +22,7 @@ class Program
         }
         //Console.WriteLine($"Число {nInt} - {countN} значное");
 
-        //Запись числа в массив
+        //Запись цифр числа в массив 
         tempNInt = nInt;
         int[] stringN = new int[countN];
 
@@ -80,3 +80,43 @@ class Program
 // }
 
 // Console.Write($"{num[num.Length - 1] - 48}");
+
+
+
+// Третий вариант
+
+// using System;
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         Console.WriteLine("Введите любое натуральное число");
+//         int num = Convert.ToInt32(Console.ReadLine());
+
+//         if (num < 10)
+//         {
+//             Console.Write("Исходное число состоит из одной цифры {0}", num);
+//         }
+//         else
+//         {
+//             Console.Write("Исходное число {0} состоит из цифр ", num);
+//             while (num > 0)
+//             {
+//                 int digit = num % 10;
+//                 Console.Write("{0}", digit);
+//                 num /= 10;
+//                 if (num > 0)
+//                 {
+//                     Console.Write(", ");
+//                 }
+
+//             }
+//         }
+
+
+
+
+
+//     }
+// }
