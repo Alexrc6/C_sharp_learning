@@ -1,0 +1,15 @@
+D:\GB\01_CSHARP\Code_samples\4.Ref\bin\Debug\net8.0\4.Ref.exe
+D:\GB\01_CSHARP\Code_samples\4.Ref\bin\Debug\net8.0\4.Ref.deps.json
+D:\GB\01_CSHARP\Code_samples\4.Ref\bin\Debug\net8.0\4.Ref.runtimeconfig.json
+D:\GB\01_CSHARP\Code_samples\4.Ref\bin\Debug\net8.0\4.Ref.dll
+D:\GB\01_CSHARP\Code_samples\4.Ref\bin\Debug\net8.0\4.Ref.pdb
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\4.Ref.GeneratedMSBuildEditorConfig.editorconfig
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\4.Ref.AssemblyInfoInputs.cache
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\4.Ref.AssemblyInfo.cs
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\4.Ref.csproj.CoreCompileInputs.cache
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\4.Ref.sourcelink.json
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\4.Ref.dll
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\refint\4.Ref.dll
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\4.Ref.pdb
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\4.Ref.genruntimeconfig.cache
+D:\GB\01_CSHARP\Code_samples\4.Ref\obj\Debug\net8.0\ref\4.Ref.dll

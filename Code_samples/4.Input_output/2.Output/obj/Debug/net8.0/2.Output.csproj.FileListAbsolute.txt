@@ -1,0 +1,15 @@
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\bin\Debug\net8.0\2.Output.exe
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\bin\Debug\net8.0\2.Output.deps.json
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\bin\Debug\net8.0\2.Output.runtimeconfig.json
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\bin\Debug\net8.0\2.Output.dll
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\bin\Debug\net8.0\2.Output.pdb
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\2.Output.GeneratedMSBuildEditorConfig.editorconfig
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\2.Output.AssemblyInfoInputs.cache
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\2.Output.AssemblyInfo.cs
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\2.Output.csproj.CoreCompileInputs.cache
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\2.Output.sourcelink.json
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\2.Output.dll
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\refint\2.Output.dll
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\2.Output.pdb
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\2.Output.genruntimeconfig.cache
+D:\GB\01_CSHARP\Code_samples\4.Input_output\2.Output\obj\Debug\net8.0\ref\2.Output.dll
