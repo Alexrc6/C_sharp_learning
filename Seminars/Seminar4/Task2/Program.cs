@@ -7,12 +7,12 @@ int[] FillMasOfRand(int[] mas)
 {
     for (int i = 0; i < mas.Length; i++)
     {
-        mas[i] = new Random().Next(1,100);
+        mas[i] = new Random().Next(1,1000);
     }
     return mas;
 }
 
-int[] PrintMas(int[] mas)
+void PrintMas(int[] mas)
 {
     for (int i = 0; i < mas.Length; i++)
     {
@@ -25,9 +25,10 @@ int CountNum(int[] mas)
     int count = 0;
     for(int i = 0; i < mas.Length; i++)
     {
-       if ((mas[i] % 10 == 1) $$ (mas[i] % 10 == 0))
+       if(mas[i] % 10 == 1 && mas[i] % 7 == 0) 
        {
         count++;
+        Console.WriteLine(mas[i]);
        }
         
     }
@@ -44,7 +45,7 @@ int[] newMas = FillMasOfRand(mas);
 
 
 PrintMas(newMas);
-
+Console.WriteLine();
 Console.WriteLine(CountNum(newMas));
 
 

@@ -3,7 +3,55 @@
 // Сформируйте целое число, которое будет состоять из цифр из
 // массива. Старший разряд числа находится на 0-м индексе,
 // младший – на последнем. 
-сделать свой
+
+int[] FillMasRandom(int[] mas)
+{
+    for (int i = 0; i < mas.Length; i++)
+    {
+        mas[i] = new Random().Next(1,10);
+    }
+    return mas;
+}
+
+void PrintMas(int[] mas)
+{
+    for (int i = 0; i < mas.Length; i++)
+    {
+        Console.Write($"{mas[i]} ");
+    }
+}
+
+int CreateNumFromMas(int[] mas)
+{
+    int number = mas[0];
+    for (int i = 1; i < mas.Length; i++)
+    {
+        number = number*10 + mas[i];
+    }
+    return number;
+}
+
+Console.WriteLine("Введите n - длину массива (не более 8)");
+int  n = Convert.ToInt32(Console.ReadLine());
+
+int[] mas = new int[n];
+int[] newMas = FillMasRandom(mas);
+
+PrintMas(newMas);
+Console.WriteLine();
+Console.WriteLine(CreateNumFromMas(newMas));
+
+
+
+
+
+
+
+
+
+
+
+
 
 //еще один вариант
 // using System.Security.Cryptography;
