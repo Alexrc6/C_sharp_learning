@@ -1,0 +1,15 @@
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\Training1.GeneratedMSBuildEditorConfig.editorconfig
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\Training1.AssemblyInfoInputs.cache
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\Training1.AssemblyInfo.cs
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\Training1.csproj.CoreCompileInputs.cache
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\Training1.sourcelink.json
+D:\GB\01_CSHARP\Training_rum\Training1\bin\Debug\net8.0\Training1.exe
+D:\GB\01_CSHARP\Training_rum\Training1\bin\Debug\net8.0\Training1.deps.json
+D:\GB\01_CSHARP\Training_rum\Training1\bin\Debug\net8.0\Training1.runtimeconfig.json
+D:\GB\01_CSHARP\Training_rum\Training1\bin\Debug\net8.0\Training1.dll
+D:\GB\01_CSHARP\Training_rum\Training1\bin\Debug\net8.0\Training1.pdb
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\Training1.dll
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\refint\Training1.dll
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\Training1.pdb
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\Training1.genruntimeconfig.cache
+D:\GB\01_CSHARP\Training_rum\Training1\obj\Debug\net8.0\ref\Training1.dll
