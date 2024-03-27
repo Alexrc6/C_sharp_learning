@@ -80,3 +80,39 @@ string S(int[] col, int m)
 }
 
 Console.WriteLine(S(new_mas, m)); new_mas
+
+
+
+
+
+int[,] CreateMatrixRandom(int rowCount, int columsCount)
+{
+    int[,] matrix = new int[rowCount, columsCount];
+    Random rnd = new Random();
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            matrix[i, j] = rnd.Next(1, 1000);
+        }
+    }
+    return matrix;
+}
+
+void PrintMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j]} ");
+        }
+         Console.WriteLine();
+    }
+}
+
+
+int[,] matrix = CreateMatrixRandom(5, 6);
+PrintMatrix(matrix);
+Console.WriteLine();
+FindAndPrintIntrestingMas(matrix);
