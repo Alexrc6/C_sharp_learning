@@ -63,5 +63,14 @@ Console.WriteLine("Средние значения значений строк:"
 PrintMas(FindAverageInRow(newArr));
 
 
-
-
+//типизация???
+public static class CollectionExtensions
+{
+    static void Print<T>(this ICollection<T> list)
+    {
+        foreach (T item in list)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
