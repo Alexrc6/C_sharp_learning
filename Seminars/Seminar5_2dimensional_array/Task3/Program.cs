@@ -75,6 +75,17 @@ PrintMas(FindAverageInRow(newArr));
 //     }
 // }
 
+//функция с обобщениями
+// void Print<T>(T[] list)
+// {
+//     foreach(var i in list)
+//     {
+//         Console.WriteLine(i);
+//     }
+// }
+
+
+
 
 //код Марины
 // int[,] num1 = {{2, 32, 4, 3}, {4, 3, 12, 1}, {2, 8, 5, 4}};
