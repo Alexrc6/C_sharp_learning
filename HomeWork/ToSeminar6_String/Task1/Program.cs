@@ -1,52 +1,72 @@
-﻿//Задайте массив символов (тип char []). Создайте строку из символов этого массива.
+﻿// Задайте двумерный массив символов (тип char [,]). 
+// Создать строку из символов этого массива.
 
-string CharToString(char[] arr)
+using System;
+using System.Text;
+Console.InputEncoding = Encoding.Unicode;
+Console.OutputEncoding = Encoding.Unicode;
+
+char[,] CreateRandomArrayOfChar(int ArrayRows, int ArrayColums)
 {
-    string st = "";
-    foreach (var item in arr)
-    {
-        st += item;
-    }
-    return st;
+   char[,] SymbolsArr = new char[ArrayRows, ArrayColums];
+   Random rnd = new Random();
+   for (int i = 0; i < SymbolsArr.GetLength(0); i++)
+   {
+      for (int j = 0; j < SymbolsArr.GetLength(1); j++)
+      {
+         SymbolsArr[i, j] = Convert.ToChar(rnd.Next('A', 'z' + 1));
+      }
+   }
+   return SymbolsArr;
 }
 
+string ConvertArrayToString(char[,] array2D)
+{
+   string stringNew = "";
+   for (int i = 0; i < array2D.GetLength(0); i++)
+   {
+      for (int j = 0; j < array2D.GetLength(1); j++)
+      {
+         stringNew += array2D[i, j];
+      }
+   }
+   return stringNew;
+}
 
-char[] chars = new char[] {'a', 'b', '1', 'd'};
-Console.WriteLine(CharToString(chars));
+void PrintArr(char[,] array)
+{
+   for (int i = 0; i < array.GetLength(0); i++)
+   {
+      for (int j = 0; j < array.GetLength(1); j++)
+      {
+         Console.Write("{0} ", array[i, j]);
+      }
+      Console.WriteLine();
+   }
+}
+
+void PrintString(string str)
+{
+   for (int i = 0; i < str.Length; i++)
+   {
+      Console.Write("{0} ", str[i]);
+   }
+}
+
+char[,] ArrOfSymbols = CreateRandomArrayOfChar(3, 4);
+
+PrintArr(ArrOfSymbols);
+Console.WriteLine();
+PrintString(ConvertArrayToString(ArrOfSymbols));
 
 
 
 
-// Задайте массив символов (тип char []). Создайте строку из символов этого массива. 
-// [‘a’, ‘b’, ‘c’, ‘d’] => “abcd”
-// string CharsOfString(char[] arr)
-// {
-//     string st = "";
-//     for (int i = 0; i < arr.Length; i++)
+// Console.WriteLine();
+// char f = 'A';
+// for (int i = 0; i < 206; i++)
 //     {
-//         st += arr[i];
+//        Console.Write(f);
+//        f = Convert.ToChar(f + 1);
+//        Console.Write(' ');
 //     }
-//     return st;
-// }
-
-// string CharsOfString2(char[] arr)
-// {
-//     string st = "";
-//     foreach (var i in arr)
-//     {
-//         st += i;
-//     }
-//     return st;
-// }
-
-
-// char[] chars = new char[] {'a', '1', 'c', 'd', 'z'};
-// //string st = CharsOfString(chars);
-// Console.WriteLine(CharsOfString(chars));
-// Console.WriteLine(CharsOfString2(chars));
-
-// // string st2 = "12345";
-// // for (int i = 0; i < st2.Length; i++)
-// // {
-// //     Console.WriteLine(st2[i]);
-// // }

@@ -1,113 +1,91 @@
-﻿// Считать строку с консоли, состоящую из латинских букв в нижнем регистре. 
-// Выяснить, сколько среди введённых букв гласных (aouei).
+﻿// Задача 3: Задайте произвольную строку. 
+// Выясните, является ли она палиндромом.
+
 using System;
 using System.Text;
 Console.InputEncoding = Encoding.Unicode;
 Console.OutputEncoding = Encoding.Unicode;
 
+string CreateRandomString(int n)
+{
+    string str = "";
+    int num = 0;
+    Random rnd = new Random();
 
-int CountVowels(string str)
-{
-string vowels = "аеёийоуыэюяАЕЁИЙОУЫЭЮЯ";
-//char[] vowels = {'а'};
-int count = 0;
-for (int i = 0; i < str.Length; i++)
-{
-    for (int j = 0; j < vowels.Length; j++)
+    for (int i = 0; i < n; i++)
     {
-        if (str[i] == vowels[j])
+        num = rnd.Next(1, 3);
+        if (num == 1)
         {
-            count++;
-            break;
+            char sym = Convert.ToChar(rnd.Next('A', 'Z'));
+            str += sym;
+            // Console.Write($"-{sym}-");
+        }
+        else
+        {
+            char sym = Convert.ToChar(rnd.Next('a', 'z'));
+            str += sym;
+            // Console.Write($"-{sym}-");
         }
     }
+    return str;
 }
-return count;
+
+bool CheckForPalinndrome(string str)
+{
+
+    for (int i = 0; i < str.Length / 2; i++)
+    {
+        if (str[i] != str[str.Length - i - 1])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+void PrintString(string str)
+{
+    for (int i = 0; i < str.Length; i++)
+    {
+        Console.Write("{0} ", str[i]);
+    }
+}
+
+string stringOfLetters = "";
+stringOfLetters = CreateRandomString(11);
+//stringOfLetters = "!sГf1h1fГs!";
+PrintString(stringOfLetters);
+Console.WriteLine();
+if (CheckForPalinndrome(stringOfLetters) == true)
+{
+    Console.WriteLine("Строка является палиндромом.");
+}
+else
+{
+    Console.WriteLine("Строка не является палиндромом.");
 }
 
 
-string str = Console.ReadLine()!;
-
-Console.WriteLine(CountVowels(str));
 
 
 
-
-//Злата
-// Считать строку с консоли, состоящую из латинских букв в нижнем регистре. 
-// Выяснить, сколько среди введённых букв гласных (aouei).
-
-// using System;
-// using System.Text;
-// Console.InputEncoding = Encoding.Unicode;
-// Console.OutputEncoding = Encoding.Unicode;
-
-// int FindVowels(string str)
+// public class Task3
 // {
-//     string vowels = "aoueiуеаояиыюэAOUEIУЕЫАОЭЯИЮ";
-//     int count = 0;
-//     for (int i = 0; i < str.Length; i++)
-//     { 
-//        for (int j = 0; j < vowels.Length; j++) 
-//        {
-//         if (str[i] == vowels[j])
-//         {
-//             count++;
-//         }
-//        }
-//     }
-//     return count;
-// }
-
-// Console.Write("Введите строку: ");
-// string n = Console.ReadLine()!;
-// int res = FindVowels(n);
-// Console.WriteLine(res);
-
-
-
-
-
-
-
-
-
-
-// int VowelsCounter(string str)
+// public static void Main(string[] args)
 // {
-//     char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'y', 'u' };
-//     int res = 0;
-//     foreach (char c in str)
-//     {
-//         if (vowels.Contains(c))
-//         {
-//             res++;
-//         }
-//     }
-
-//     return res;
+// // Входная строка для проверки
+// string input = "шалаш";
+// // Вызов метода для проверки, является ли строка палиндромомbool isPalindrome = IsPalindrome(input);
+// // Вывод результата
+// Console.WriteLine(isPalindrome ? "Да" : "Нет");
 // }
-
-
-
-
-// string readString = Console.ReadLine()!;
-// Console.WriteLine(VowelsCounter(readString.ToLower()));
-
-// int VowelsCounter(string str)
+// // Метод для проверки, является ли строка палиндромомpublic static bool IsPalindrome(string str)
 // {
-//     char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'y', 'u', 'а', 'е', 'и', 'ю', 'я', 'о'};
-//     int res = 0;
-//     foreach (char c in str)
-//     {
-//         if (vowels.Contains(c))
-//         {
-//             res++;
-//         }
-//     }
-
-//     return res;
+// // Нормализация строки путем удаления не буквенно-цифровыхсимволов и приведения к нижнему регистру
+// string normalized = new
+// string(str.Where(char.IsLetterOrDigit).ToArray()).ToLower();
+// // Сравнение строки с ее перевернутым вариантом
+// return normalized.SequenceEqual(normalized.Reverse());
 // }
-
-// string readString = Console.ReadLine()!;
-// Console.WriteLine(VowelsCounter(readString.ToLower()));
+// }

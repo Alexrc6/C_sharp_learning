@@ -1,86 +1,43 @@
-﻿// На основе символов строки (тип string) сформировать массив символов (тип char[]). Вывести массив на экран.
-// “Hello!” => [‘H’, ‘e’, ‘l’, ‘l’, ‘o’, ‘!’ ]
+﻿
+// Задайте строку, содержащую латинские буквы в обоих регистрах. 
+// Сформируйте строку, в которой все заглавные буквы заменены на строчные.
 
-using System;
-using System.Text; //эта и последующие 2 строчки позволяют работать с русским
-Console.InputEncoding = Encoding.Unicode;
-Console.OutputEncoding = Encoding.Unicode;
+string CreateRandomString(int n)
+{
+    string str = "";
+    int num = 0;
+    Random rnd = new Random();
 
-char[] StringToChar(string str)
-{
-char[] symbols = new char[str.Length];
-for (int i = 0; i < string.Length; i++)
-{
-    symbols[i] = str[i];
-}
-return symbols;
-}
-
-void PrintMass(char[] collection)
-{
-    foreach (var item in collection)
+    for (int i = 0; i < n; i++)
     {
-        Console.Write($"{item} ");
+        num = rnd.Next(1, 3);
+        if (num == 1)
+        {
+            char sym = Convert.ToChar(rnd.Next('A', 'Z'));
+            str += sym;
+            // Console.Write($"-{sym}-");
+        }
+        else
+        {
+            char sym = Convert.ToChar(rnd.Next('a', 'z'));
+            str += sym;
+            // Console.Write($"-{sym}-");
+        }
     }
-    Console.WriteLine();
+    return str;
 }
 
-string str1 = Console.ReadLine();
-char[] str2 = StringToChar(str1);
-Console.WriteLine(PrintMass(str2));
+void PrintString(string str)
+{
+    for (int i = 0; i < str.Length; i++)
+    {
+        Console.Write("{0} ", str[i]);
+    }
+}
 
-
-
-
-// int VowelsCounter(string str)
-// {
-//     char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'y', 'u' };
-//     int res = 0;
-//     foreach (char c in str)
-//     {
-//         if (vowels.Contains(c))
-//         {
-//             res++;
-//         }
-//     }
-
-//     return res;
-// }
-
-
-
-
-string readString = Console.ReadLine()!;
-Console.WriteLine(VowelsCounter(readString.ToLower()));
-
-
-
-
-
-// using System;
-// using System.Text;
-// Console.InputEncoding = Encoding.Unicode;
-// Console.OutputEncoding = Encoding.Unicode;
-
-//  void PrintMass(char[] collection)
-// {
-//     foreach (var item in collection)
-//     {
-//         Console.Write($"{item} ");
-//     }
-//     Console.WriteLine();
-// }
-
- 
- 
-// string n = Console.ReadLine();
-// char[] mass=new char[n.Length];
-// for(int i=0;i<n.Length;i++){
-
-// mass[i]=n[i];
-
-
-// }
-
-
-// PrintMass(mass);
+string stringOfLetters = "";
+stringOfLetters = CreateRandomString(11);
+PrintString(stringOfLetters);
+Console.WriteLine();
+string s = stringOfLetters.ToLower();
+PrintString(s);
