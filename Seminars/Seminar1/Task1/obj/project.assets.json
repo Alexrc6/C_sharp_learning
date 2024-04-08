@@ -9,24 +9,24 @@
   },
   "packageFolders": {
     "C:\\Users\\arche\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GB\\01_CSHARP\\Seminar\\Seminar1\\Task1\\Seminar1.csproj",
+      "projectUniqueName": "D:\\GB\\01_CSHARP\\Seminars\\Seminar1\\Task1\\Seminar1.csproj",
       "projectName": "Seminar1",
-      "projectPath": "D:\\GB\\01_CSHARP\\Seminar\\Seminar1\\Task1\\Seminar1.csproj",
+      "projectPath": "D:\\GB\\01_CSHARP\\Seminars\\Seminar1\\Task1\\Seminar1.csproj",
       "packagesPath": "C:\\Users\\arche\\.nuget\\packages\\",
-      "outputPath": "D:\\GB\\01_CSHARP\\Seminar\\Seminar1\\Task1\\obj\\",
+      "outputPath": "D:\\GB\\01_CSHARP\\Seminars\\Seminar1\\Task1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\arche\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
